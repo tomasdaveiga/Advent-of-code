@@ -8,10 +8,6 @@ int finalFloor(const string& s){
     int floor = 0;
     for (char i : s){
         i=='(' ? floor+=1 : floor-=1;
-
-        if(floor<0){
-            std::cout << "basement at position: " << i+1 << std::endl;
-        }
     }
     return floor;
 }
@@ -35,6 +31,7 @@ int main() {
     input_file.open("/home/tomas/CLionProjects/Advent-of-code/2015/1/input.txt");
     string input_str;
     getline(input_file, input_str);
+    std::cout << "Santa goes to floor " << finalFloor(input_str) << std::endl;
     std::cout << "Santa goes to floor " << BasementIndex(input_str) << std::endl;
     return 0;
 }

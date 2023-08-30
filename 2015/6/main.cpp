@@ -6,7 +6,8 @@
 
 int main() {
 
-    lightGrid grid(1000,1000);
+    lightGrid grid1(1000,1000);
+    lightGrid grid2(1000,1000);
 
     std::string input;
     std::ifstream file;
@@ -39,9 +40,10 @@ int main() {
         coordinates.push_back(std::stoi(input.substr(0,comma)));
         coordinates.push_back(std::stoi(input.substr(comma+1, input.length()-comma-1)));
 
-        grid.instructions1(coordinates, action);
-//        grid.instructions2(coordinates, action);
+        grid1.instructions1(coordinates, action);
+        grid2.instructions2(coordinates, action);
     }
-    std::cout << "Lights on: " << grid.numLightsOn() << std::endl;
+    std::cout << "First: " << grid1.numLightsOn() << std::endl;
+    std::cout << "Second: "<< grid2.numLightsOn() << std::endl;
     return 0;
 }

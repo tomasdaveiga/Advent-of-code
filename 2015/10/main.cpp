@@ -26,6 +26,7 @@ std::string look_and_say(std::string sequence, int times){
 
 
 int main() {
-    std::cout << look_and_say("1113122113", 50).length() << std::endl;
+    std::cout << "40 times: " << look_and_say("1321131112", 40).length() << std::endl;
+    std::cout << "50 times: " << look_and_say("1321131112", 50).length() << std::endl;
     return 0;
 }

@@ -4,10 +4,10 @@
 
 using namespace std;
 
-int minHashNumber(const string& input){
+int minHashNumber(const string& input, const string startKey){
     string result = md5(input);
     int counter = 0;
-    while(result.substr(0,6) != "000000"){
+    while(result.substr(0,startKey.length()) != startKey){
         string line = input + to_string(++counter);
         result = md5(line);
     }
@@ -15,6 +15,7 @@ int minHashNumber(const string& input){
 }
 
 int main() {
-    std::cout << "The min number is " << minHashNumber("bgvyzdsv") << std::endl;
+    std::cout << "Starting with 00000, the min number is " << minHashNumber("yzbqklnj","00000") << std::endl;
+    std::cout << "Starting with 000000, the min number is " << minHashNumber("yzbqklnj","000000") << std::endl;
     return 0;
 }

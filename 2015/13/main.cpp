@@ -68,6 +68,7 @@ int main() {
         names.insert(line.substr(0,first_name));
         names.insert(line.substr(last_name+3));
     }
+    std::cout << "1st part: " << happinessPoints(names,relationships) << std::endl;
 
     // Add me to list
     for (const auto& i:names){
@@ -76,6 +77,6 @@ int main() {
     }
     names.insert("Me");
 
-    std::cout << happinessPoints(names,relationships) << std::endl;
+    std::cout << "2nd part: " <<  happinessPoints(names,relationships) << std::endl;
     return 0;
 }

@@ -40,6 +40,8 @@ std::string nextPassword(std::string password){
 }
 
 int main() {
-    std::cout << "The next password is " << nextPassword("zzzzzzzz") << std::endl;
-    return 0;
+	std::string curr_password = "hxbxwxba";
+	std::cout << "Current password is: " << curr_password << ". Next one is: " << nextPassword(curr_password) << std::endl;
+	std::cout << "And the next one is " << nextPassword(nextPassword(curr_password)) << std::endl;
+	return 0;
 }

@@ -5,12 +5,11 @@
 
 class Property{
 public:
+    Property();
     std::map<std::string,int> ingredient_values;
-
     void addIngredient(const std::string& ingredient, int value){
         ingredient_values[ingredient] = value;
     };
-    Property();
 };
 
 Property::Property() = default;
@@ -19,11 +18,47 @@ Property::Property() = default;
 int highScore(std::vector<std::string> ingredients, std::vector<Property> list){
     int score;
 
-    
-    for(auto i:ingredients){
+    for 
 
+
+    for(auto i:ingredients){
+        
     }
 
+    // Three ingredients
+    // round 1
+    // First - 100 ts
+    // Second - 0 tsp
+    // Third - 0 tsp    
+
+    // round 2
+    // First - 99 tsp
+    // Second- 1 tsp
+    // Third - 0 tsp
+
+    // Round 3
+    // First - 98 tsp
+    // Second - 2 tsp
+    // Third - 0 tsp
+
+    // Round 4
+    // First - 97 tsp
+    // Second - 3 tsp
+    // Third - 0 tsp
+
+    // ...
+
+    // Round 100
+    // First - 1 tsp
+    // Second - 99 tsp
+    // Third - 0 tsp
+
+    // Round 101
+    // First - 0 tsp
+    // Second - 100 tsp
+    // Third - 0 tsp
+
+    
     return score;
 }
 
@@ -31,7 +66,7 @@ int highScore(std::vector<std::string> ingredients, std::vector<Property> list){
 int main() {
 
     std::ifstream file;
-    file.open("/home/tomas/CLionProjects/Advent-of-code/2015/15/test.txt");
+    file.open("/home/tomas/Documents/Advent-of-code/2015/15/test.txt");
     std::string line;
 
     Property capacity, durability, flavor, texture, calories;
@@ -67,7 +102,6 @@ int main() {
     list.push_back(flavor);
     list.push_back(texture);
     list.push_back(calories);
-
-    std::cout << highScore(Ingredients,list) << std::endl;
+    std::cout << highScore(Ingredients, list) << std::endl;
     return 0;
 }

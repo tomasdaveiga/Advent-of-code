@@ -32,7 +32,7 @@ void checkJSONsum(Json::Value root, int &sum, bool careRed){
 
 int main() {
     std::ifstream file;
-    file.open("/home/tomas/CLionProjects/Advent-of-code/2015/12/input.txt");
+    file.open("/home/tomas/Documents/Advent-of-code/2015/12/input.txt");
     std::string line;
 
     Json::Reader reader;
