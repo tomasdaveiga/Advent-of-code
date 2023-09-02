@@ -87,7 +87,7 @@ std::vector<std::map<std::string, int> > parseInput(std::string input){
             }
 
             // Get vizslas number
-            keyword = "vizlas";
+            keyword = "vizslas";
             keyword_pos = line.find(keyword);
             if (keyword_pos != std::string::npos){
                 std::size_t comma_pos = line.find(',',keyword_pos);
