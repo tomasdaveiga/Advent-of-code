@@ -1,5 +1,6 @@
 import Test.Hspec
 import DayOne
+import DayTwo
 
 main :: IO ()
 main = hspec $ do
@@ -12,3 +13,9 @@ main = hspec $ do
         dayOnePart1 testContentP1T2 `shouldBe` 2
         dayOnePart1 testContentP1T3 `shouldBe` 12
         dayOnePart2 testContentP2   `shouldBe` 4
+    
+    it "Day 02" $ do
+        testContentP1 <- readFile "test/day02Part1.txt"
+        testContentP2 <- readFile "test/day02Part1.txt"
+        dayTwoPart1 testContentP1 `shouldBe` 1985
+        dayTwoPart2 testContentP2 `shouldBe` "5DB3"
