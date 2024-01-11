@@ -15,4 +15,4 @@ main = do
 
     contentsDay3 <- readFile "input/day03.txt"
     print $ "Day03 part 1: " <> show (dayThreePart1 contentsDay3)
-    -- print "Day03 part 2: " <> $ dayThreePart2 contentsDay3
+    print $ "Day03 part 2: " <> show (dayThreePart2 contentsDay3)

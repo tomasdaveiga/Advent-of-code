@@ -22,5 +22,5 @@ main = hspec $ do
 
     it "Day 03" $ do
         testContentP1 <- readFile "test/day03Part1.txt"
-        dayThreePart1 testContentP1 `shouldBe` 0
-        dayThreePart2 testContentP1 `shouldBe` 2
+        dayThreePart1 testContentP1 `shouldBe` 1
+        dayThreePart2 testContentP1 `shouldBe` 3
