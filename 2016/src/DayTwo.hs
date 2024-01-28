@@ -4,7 +4,7 @@ import Data.List.Split (splitOn)
 import Data.Set ( member, insert, empty)
 
 nextDigit :: Int -> String -> Int
-nextDigit startDigit inputLine = foldl applyDirection startDigit inputLine
+nextDigit = foldl applyDirection
   where
     applyDirection :: Int -> Char -> Int
     applyDirection start direction =
@@ -15,7 +15,7 @@ nextDigit startDigit inputLine = foldl applyDirection startDigit inputLine
         'R' -> if start == 3 || start == 6 || start == 9 then start else start + 1
 
 nextDigitDay2 :: Char -> String -> Char
-nextDigitDay2 startDigit inputLine = foldl applyDirectionDay2 startDigit inputLine
+nextDigitDay2 = foldl applyDirectionDay2
   where
     applyDirectionDay2 :: Char -> Char -> Char
     applyDirectionDay2 start direction =
