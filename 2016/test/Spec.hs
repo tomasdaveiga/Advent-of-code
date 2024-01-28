@@ -2,6 +2,7 @@ import Test.Hspec
 import DayOne
 import DayTwo
 import DayThree
+import DayFour
 
 main :: IO ()
 main = hspec $ do
@@ -24,3 +25,7 @@ main = hspec $ do
         testContentP1 <- readFile "test/day03Part1.txt"
         dayThreePart1 testContentP1 `shouldBe` 1
         dayThreePart2 testContentP1 `shouldBe` 3
+
+    it "Day 04" $ do
+        testContentP1 <- readFile "test/day04Part1.txt"
+        dayFourPart1 testContentP1 `shouldBe` 1514

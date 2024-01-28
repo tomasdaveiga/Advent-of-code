@@ -2,6 +2,7 @@ module Main (main) where
 import DayOne
 import DayTwo
 import DayThree
+import DayFour
 
 main :: IO ()
 main = do
@@ -16,3 +17,6 @@ main = do
     contentsDay3 <- readFile "input/day03.txt"
     print $ "Day03 part 1: " <> show (dayThreePart1 contentsDay3)
     print $ "Day03 part 2: " <> show (dayThreePart2 contentsDay3)
+
+    contentsDay4 <- readFile "input/day04.txt"
+    print $ "Day04 part 1: " <> show (dayFourPart1 contentsDay4)
