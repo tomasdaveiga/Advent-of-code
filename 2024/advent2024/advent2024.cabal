@@ -28,6 +28,7 @@ library
       DayOne
       DayThree
       DayTwo
+      DayFour
   other-modules:
       Paths_advent2024
   autogen-modules:

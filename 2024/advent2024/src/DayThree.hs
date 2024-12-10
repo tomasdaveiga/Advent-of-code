@@ -7,8 +7,6 @@ import Text.Regex.TDFA
 import Text.Regex.TDFA.Text()
 import Data.List (isInfixOf)
 import Data.Maybe (mapMaybe, fromJust)
-import Debug.Trace
-debug = flip trace
 
 getMults :: String -> [(Int,Int)]
 getMults input = mapMaybe getTuples cases
@@ -39,4 +37,4 @@ dayThreePart1 :: String -> Int
 dayThreePart1 input = sum $ map (\(x,y) -> x*y) (getMults input)
 
 dayThreePart2 :: String -> Int
-dayThreePart2 input = sum $ map (\(x,y) -> x*y) (gothrough (getMultsDosDonts input) True) `debug` show ((getMultsDosDonts input))
+dayThreePart2 input = sum $ map (\(x,y) -> x*y) (gothrough (getMultsDosDonts input) True)
