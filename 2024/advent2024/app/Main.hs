@@ -16,9 +16,9 @@ main = do
     print $ dayTwoPart2 dayTwoInput
 
     dayThreeInput <- readFile "input/day03.txt"
-    print $ dayThreePart1 dayThreeInput
-    print $ dayThreePart2 dayThreeInput
+    print ("Day Three part1: " ++ show(dayThreePart1 dayThreeInput))
+    print ("Day Three part2: " ++ show(dayThreePart2 dayThreeInput))
 
     dayFourInput <- readFile "input/day04.txt"
-    print $ dayFourPart1 dayFourInput
-    print $ dayFourPart2 dayFourInput
+    print ("Day Four part1: " ++ show(dayFourPart1 dayFourInput))
+    print ("Day Four part2: " ++ show(dayFourPart2 dayFourInput))

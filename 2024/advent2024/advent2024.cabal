@@ -25,10 +25,10 @@ source-repository head
 
 library
   exposed-modules:
+      DayFour
       DayOne
       DayThree
       DayTwo
-      DayFour
   other-modules:
       Paths_advent2024
   autogen-modules:
@@ -39,6 +39,7 @@ library
   build-depends:
       base >=4.7 && <5
     , regex-tdfa
+    , universe-base
   default-language: Haskell2010
 
 executable advent2024-exe
@@ -54,6 +55,7 @@ executable advent2024-exe
       advent2024
     , base >=4.7 && <5
     , regex-tdfa
+    , universe-base
   default-language: Haskell2010
 
 test-suite advent2024-test
@@ -71,4 +73,5 @@ test-suite advent2024-test
     , base >=4.7 && <5
     , hspec
     , regex-tdfa
+    , universe-base
   default-language: Haskell2010
