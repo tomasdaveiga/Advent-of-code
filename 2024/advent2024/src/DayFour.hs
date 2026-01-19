@@ -5,8 +5,6 @@ module DayFour
 
 import Data.List ( isPrefixOf, tails, transpose)
 import Data.Universe.Helpers (diagonals)
-import Debug.Trace
-debug = flip trace
 
 submatrix :: [String] -> Int -> Int -> [String]
 submatrix matrix i j =
